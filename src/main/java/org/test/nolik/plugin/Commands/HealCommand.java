@@ -8,21 +8,21 @@ import org.bukkit.entity.Player;
 /**
  @author: nolikdevelopment
  */
+public class HealCommand implements CommandExecutor {
 
-public class KillCommand implements CommandExecutor {
     private String nolikplugin = "[NolikPlugin]";
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
             return false;
         }
         Player p = (Player) sender;
-        if (cmd.getName().toLowerCase().equals("kill")) {
-            playerKill(p);
-            p.sendMessage(nolikplugin + " Вы убили себя!");
+        if (cmd.getName().toLowerCase().equals("heal")) {
+            healPlayer(p);
+            p.sendMessage(nolikplugin + " Вы исцелили себя");
         }
         return false;
     }
-    void playerKill(Player p) {
-        p.setHealth(0);
+    void healPlayer(Player p) {
+        p.setHealth(20);
     }
 }
