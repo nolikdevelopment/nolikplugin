@@ -1,4 +1,0 @@
-name: nolikplugin
-version: '0.0.1'
-main: org.test.nolik.nolikplugin.Nolikplugin
-api-version: '1.21'
