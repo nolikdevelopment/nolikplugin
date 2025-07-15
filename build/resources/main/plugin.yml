@@ -1,0 +1,15 @@
+name: nolikplugin
+version: '0.0.1T'
+main: org.test.nolik.untitled.CommandManager
+api-version: '1.21'
+commands:
+    coords:
+      description: Пишет ваш мир.
+    kill:
+     description: Убивает вас.
+    nick:
+      decrisption: Показывает ваш никнейм на сервере.
+
+    fly:
+      decrisption: Включает режим полета для игрока.
+
