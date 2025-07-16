@@ -32,6 +32,8 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("v").setExecutor(new VanishCommand());
        getCommand("server").setExecutor(new ServerCommand());
        getCommand("kick").setExecutor(new KickCommand());
+       getCommand("day").setExecutor(new DayCommand());
+       getCommand("night").setExecutor(new NightCommand());
 
 
 
