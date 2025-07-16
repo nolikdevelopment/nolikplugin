@@ -28,6 +28,11 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("creative").setExecutor(new GamemodeCommand());
        getCommand("survival").setExecutor(new SurvivalCommand());
        getCommand("spectator").setExecutor(new SpectatorCommand());
+       getCommand("back").setExecutor(new BackCommand());
+       getCommand("v").setExecutor(new VanishCommand());
+       getCommand("server").setExecutor(new ServerCommand());
+       getCommand("kick").setExecutor(new KickCommand());
+
 
 
 
@@ -43,6 +48,5 @@ public final class CommandManager extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }
