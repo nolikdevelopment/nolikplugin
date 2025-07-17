@@ -25,7 +25,7 @@ public class ServerCommand implements CommandExecutor {
     }
     void sendMessage(Player p) {
         p.sendMessage(ChatColor.GOLD + "[Информация]"  + ChatColor.WHITE + " Никнейм: " + p.getName());
-        p.sendMessage((ChatColor.GOLD + "[Информация]" + ChatColor.WHITE + " Ядро: " + p.getServer().getName()));
+        p.sendMessage((ChatColor.GOLD + "[Информация]" + ChatColor.WHITE + " Версия: " + p.getServer().getVersion()));
         p.sendMessage((ChatColor.GOLD + "[Информация]" + ChatColor.WHITE + " Онлайн: " + p.getServer().getOnlinePlayers().size()));
     }
 }

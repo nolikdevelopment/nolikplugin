@@ -5,10 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.test.nolik.plugin.Commands.*;
-import org.test.nolik.plugin.Events.DeathPlayerEvent;
-import org.test.nolik.plugin.Events.EventBlockBreak;
-import org.test.nolik.plugin.Events.GodPlayerEvent;
-import org.test.nolik.plugin.Events.WelcomeMessageEvent;
+import org.test.nolik.plugin.Events.*;
 
 /**
  @author: nolikdevelopment
@@ -48,6 +45,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
             pluginManager.registerEvents(new EventBlockBreak(), this);
             pluginManager.registerEvents(new DeathPlayerEvent(), this);
             pluginManager.registerEvents(new GodPlayerEvent(), this);
+            pluginManager.registerEvents(new PlayerBlockBreakEvent(), this);
 
     }
 
