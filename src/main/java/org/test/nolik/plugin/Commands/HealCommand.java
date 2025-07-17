@@ -1,5 +1,6 @@
 package org.test.nolik.plugin.Commands;
 
+import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,6 +24,7 @@ public class HealCommand implements CommandExecutor {
         return false;
     }
     void healPlayer(Player p) {
-        p.setHealth(20);
+        double maxhp =  p.getAttribute(Attribute.GENERIC_MAX_HEALTH).getDefaultValue();
+        p.setHealth(maxhp);
     }
 }

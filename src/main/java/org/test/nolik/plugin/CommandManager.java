@@ -34,6 +34,9 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("kick").setExecutor(new KickCommand());
        getCommand("day").setExecutor(new DayCommand());
        getCommand("night").setExecutor(new NightCommand());
+       getCommand("author").setExecutor(new AuthorPluginCommand());
+       getCommand("sun").setExecutor(new SunCommand());
+       getCommand("rain").setExecutor(new RainCommand());
 
 
 
@@ -45,7 +48,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
             pluginManager.registerEvents(new EventBlockBreak(), this);
             pluginManager.registerEvents(new DeathPlayerEvent(), this);
             pluginManager.registerEvents(new GodPlayerEvent(), this);
-            //
+
     }
 
     @Override
