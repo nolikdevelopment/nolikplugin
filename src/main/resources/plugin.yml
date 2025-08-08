@@ -1,4 +1,41 @@
 name: nolikplugin
 version: '0.0.1'
-main: org.test.nolik.nolikplugin.Nolikplugin
+main: org.dev.nolikplugin.CommandManager
 api-version: '1.21'
+commands:
+  stats:
+     description: Пишет информацию о сервере.
+     permission: plugin.stats
+  back:
+     description: Возвращает вас на место смерти.
+     permission: plugin.back
+  day:
+      description: Устанавливает день на сервере.
+      permission: plugin.day
+  fly:
+    description: Позволяет вашему игроку взлететь.
+    permission: plugin.fly
+  heal:
+    description: Восполняет ваше здоровье.
+    permission: plugin.heal
+  food:
+    description: Восполняет ваш голод.
+    permission: plugin.food
+  kill:
+    description: Убивает вас.
+    permission: plugin.kill
+  night:
+    description: Устанавливает ночь на сервере.
+    permission: plugin.night
+  spawn:
+    description: Телепортирует вас на спавн.
+    permission: plugin.spawn
+  rain:
+    description: Устанавливает ночь на сервере.
+    permission: plugin.rain
+  sun:
+    description: Устанавливает солнечную погоду на сервере.
+    permission: plugin.sun
+  book:
+    description: Выдает книгу с текстом
+    permission: plugin.book
