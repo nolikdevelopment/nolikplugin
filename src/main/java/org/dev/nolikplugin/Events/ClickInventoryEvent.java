@@ -15,7 +15,7 @@ public class ClickInventoryEvent implements Listener {
         if (!(event.getView().getTitle().equals("Склад"))) return;
         if (event.getCurrentItem() == null) return;
         ItemStack clicked = event.getCurrentItem();
-        ItemStack item = new ItemStack(Material.ENCHANTED_GOLDEN_APPLE);
+        ItemStack item = new ItemStack(Material.DIAMOND);
         if (clicked.isSimilar(item)) {
             player.getInventory().addItem(item);
         }
