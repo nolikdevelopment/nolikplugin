@@ -5,10 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dev.nolikplugin.Commands.*;
-import org.dev.nolikplugin.Events.ClickInventoryEvent;
-import org.dev.nolikplugin.Events.InteractPlayerEvent;
-import org.dev.nolikplugin.Events.PlayerJoinServerEvent;
-import org.dev.nolikplugin.Events.PlayerLeaveServerEvent;
+import org.dev.nolikplugin.Events.*;
 
 public final class CommandManager extends JavaPlugin implements Listener {
 
@@ -30,12 +27,15 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("book").setExecutor(new BookCommand());
        getCommand("sklad").setExecutor(new SkladCommand());
        getCommand("creeper").setExecutor(new CreeperCommand());
+       getCommand("clear").setExecutor(new ClearCommand());
+       getCommand("fullbright").setExecutor(new FullBrightCommand());
        // Евенты
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new PlayerJoinServerEvent(), this);
         pluginManager.registerEvents(new PlayerLeaveServerEvent(), this);
         pluginManager.registerEvents(new InteractPlayerEvent(), this);
         pluginManager.registerEvents(new ClickInventoryEvent(), this);
+
     }
 
     @Override
