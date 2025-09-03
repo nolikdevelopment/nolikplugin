@@ -29,9 +29,12 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("creeper").setExecutor(new CreeperCommand());
        getCommand("clear").setExecutor(new ClearCommand());
        getCommand("fullbright").setExecutor(new FullBrightCommand());
+       getCommand("seen").setExecutor(new SeenCommand());
+       getCommand("seed").setExecutor(new SeedCommamd());
+
        // Евенты
         PluginManager pluginManager = Bukkit.getPluginManager();
-        pluginManager.registerEvents(new PlayerJoinServerEvent(), this);
+        pluginManager.registerEvents(new PlayerJoinServerEvent(this), this);
         pluginManager.registerEvents(new PlayerLeaveServerEvent(), this);
         pluginManager.registerEvents(new InteractPlayerEvent(), this);
         pluginManager.registerEvents(new ClickInventoryEvent(), this);
