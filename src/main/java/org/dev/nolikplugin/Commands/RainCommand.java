@@ -11,10 +11,10 @@ public class RainCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
-        if (!(sender instanceof Player)) {
+        if (!(sender instanceof Player p)) {
             return false;
         }
-        Player p = (Player) sender;
+
         if (command.getName().toLowerCase().equals("rain")) {
             isRaining(p);
         }

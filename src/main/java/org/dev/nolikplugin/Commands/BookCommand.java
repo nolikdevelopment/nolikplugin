@@ -16,10 +16,10 @@ import java.util.List;
 public class BookCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
-        if (!(sender instanceof Player)) {
+        if (!(sender instanceof Player p)) {
             return false;
         }
-        Player p = (Player) sender;
+
         ItemStack item = new ItemStack(Material.BOOK);
         ItemMeta itemMeta = item.getItemMeta();
 

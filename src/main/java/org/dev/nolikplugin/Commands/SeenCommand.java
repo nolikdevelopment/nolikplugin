@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Date;
 
 public class SeenCommand implements CommandExecutor {
+    // TODO: null прикол
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (!(sender instanceof Player)) {

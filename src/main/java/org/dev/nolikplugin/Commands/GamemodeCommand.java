@@ -34,6 +34,9 @@ public class GamemodeCommand implements CommandExecutor {
                 player.setGameMode(GameMode.SPECTATOR);
                 sender.sendMessage("[NolikPlugin] " + "Вы установили спектатора для игрока " + player.getName());
             }
+            default -> {
+                sender.sendMessage("??");
+            }
         }
         return false;
     }
