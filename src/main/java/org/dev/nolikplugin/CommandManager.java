@@ -36,7 +36,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
        // Евенты
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new PlayerJoinServerEvent(this), this);
-        pluginManager.registerEvents(new NoStopServerEvent(), this);
+        pluginManager.registerEvents(new NoStopServerEvent(this), this);
         pluginManager.registerEvents(new PlayerLeaveServerEvent(), this);
         pluginManager.registerEvents(new InteractPlayerEvent(), this);
         pluginManager.registerEvents(new ClickInventoryEvent(), this);
