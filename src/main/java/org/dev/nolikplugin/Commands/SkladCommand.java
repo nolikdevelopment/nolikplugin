@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.dev.nolikplugin.SkladMenu;
+import org.dev.nolikplugin.Menu.SkladMenu;
 import org.jetbrains.annotations.NotNull;
 
 public class SkladCommand implements CommandExecutor {

@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
-import org.dev.nolikplugin.SkladMenu;
+import org.dev.nolikplugin.Menu.SkladMenu;
 
 public class ClickInventoryEvent implements Listener {
     // TODO: Склад = Склад предмед дюпается
