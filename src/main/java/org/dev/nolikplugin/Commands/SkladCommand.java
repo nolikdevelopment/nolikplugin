@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.dev.nolikplugin.SkladMenu;
 import org.jetbrains.annotations.NotNull;
 
 public class SkladCommand implements CommandExecutor {
@@ -25,7 +26,7 @@ public class SkladCommand implements CommandExecutor {
     }
     private void isSklading(Player p) {
         ItemStack item = new ItemStack(Material.DIAMOND);
-        Inventory inventory = Bukkit.createInventory(null, 27, "Склад");
+        Inventory inventory = Bukkit.createInventory(new SkladMenu(0), 27, "Склад");
         p.openInventory(inventory);
         inventory.setItem(4, item);
     }
