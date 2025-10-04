@@ -9,7 +9,6 @@ import org.bukkit.inventory.ItemStack;
 import org.dev.nolikplugin.Menu.SkladMenu;
 
 public class ClickInventoryEvent implements Listener {
-    // TODO: Склад = Склад предмед дюпается
     @EventHandler
     private void onClick(InventoryClickEvent event) {
         Player player = (Player) event.getWhoClicked();
