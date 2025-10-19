@@ -39,3 +39,30 @@ commands:
   book:
     description: Выдает книгу с текстом
     permission: plugin.book
+  author:
+    description: Пишет автора плагина.
+    permission: plugin.author
+  clear:
+    description: Очищает ваш инвентарь.
+    permission: plugin.clear
+  creeper:
+     description: Спавнит крипера на прицеле вашего игрока.
+     permission: plugin.creeper
+  time:
+    description: Показывает время.
+    permission: plugin.time
+  sklad:
+    description: Открывает ваше хранилище.
+    permission: plugin.sklad
+  gm:
+    description: Ставит разные режимы игроку.
+    permission: plugin.gm
+  fullbright:
+    description: Делает экран ярким.
+    permission: plugin.fullbright
+  seed:
+    description: Пишет сид мира.
+    permission: plugin.seed
+  seen:
+    description: Пишет дату последнего захода игрока на сервер.
+    permission: plugin.seen

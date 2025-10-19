@@ -24,7 +24,6 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("spawn").setExecutor(new SpawnCommand());
        getCommand("rain").setExecutor(new RainCommand());
        getCommand("sun").setExecutor(new SunCommand());
-       getCommand("book").setExecutor(new BookCommand());
        getCommand("sklad").setExecutor(new SkladCommand());
        getCommand("creeper").setExecutor(new CreeperCommand());
        getCommand("clear").setExecutor(new ClearCommand());
