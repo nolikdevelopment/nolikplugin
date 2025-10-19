@@ -22,7 +22,7 @@ public class PlayerJoinServerEvent implements Listener {
     private void onMessage(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         String uild = player.getUniqueId().toString();
-        String path = String.join(".", "users", uild, player.getName());
+        String path = String.join(".", "", uild, player.getName());
         LocalDate currentTime = LocalDate.now();
         plugin.getConfig().set(path, currentTime.toString());
         plugin.saveConfig();

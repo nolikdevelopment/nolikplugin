@@ -32,6 +32,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("seed").setExecutor(new SeedCommamd());
        getCommand("gm").setExecutor(new GamemodeCommand());
        getCommand("time").setExecutor(new TimeCommand());
+       getCommand("random").setExecutor(new RandomCommand());
 
        // Евенты
         PluginManager pluginManager = Bukkit.getPluginManager();

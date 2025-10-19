@@ -66,3 +66,6 @@ commands:
   seen:
     description: Пишет дату последнего захода игрока на сервер.
     permission: plugin.seen
+  random:
+    description: Генерирует рандомное число от 1 до 100.
+    permission: plugin.random
