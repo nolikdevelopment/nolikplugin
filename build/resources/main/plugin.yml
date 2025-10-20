@@ -69,3 +69,6 @@ commands:
   random:
     description: Генерирует рандомное число от 1 до 100.
     permission: plugin.random
+  coords:
+    description: Пишет координаты вашего игрока.
+    permission: plugin.coords
