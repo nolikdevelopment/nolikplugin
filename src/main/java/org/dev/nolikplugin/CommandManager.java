@@ -33,13 +33,12 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("gm").setExecutor(new GamemodeCommand());
        getCommand("time").setExecutor(new TimeCommand());
        getCommand("random").setExecutor(new RandomCommand());
-       getCommand("coords").setExecutor(new CoordsCommand());
 
        // Евенты
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new PlayerJoinServerEvent(this), this);
         pluginManager.registerEvents(new NoStopServerEvent(this), this);
-        pluginManager.registerEvents(new PlayerLeaveServerEvent(), this);
+        pluginManager.registerEvents(new PlayerLeaveServerEvent(this), this);
         pluginManager.registerEvents(new InteractPlayerEvent(), this);
         pluginManager.registerEvents(new ClickInventoryEvent(), this);
 

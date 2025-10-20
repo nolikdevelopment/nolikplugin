@@ -72,3 +72,4 @@ commands:
   coords:
     description: Пишет координаты вашего игрока.
     permission: plugin.coords
+
