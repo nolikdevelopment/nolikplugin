@@ -18,9 +18,9 @@ commands:
   heal:
     description: Восполняет ваше здоровье.
     permission: plugin.heal
-  food:
+  hunger:
     description: Восполняет ваш голод.
-    permission: plugin.food
+    permission: plugin.hunger
   kill:
     description: Убивает вас.
     permission: plugin.kill
