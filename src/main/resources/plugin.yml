@@ -15,7 +15,7 @@ commands:
   fly:
     description: Позволяет вашему игроку взлететь.
     permission: plugin.fly
-  heal:
+  health:
     description: Восполняет ваше здоровье.
     permission: plugin.heal
   hunger:

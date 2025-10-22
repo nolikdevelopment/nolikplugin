@@ -17,7 +17,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
        getCommand("day").setExecutor(new DayCommand());
        getCommand("back").setExecutor(new BackCommand());
        getCommand("fly").setExecutor(new FlyCommand());
-       getCommand("heal").setExecutor(new HealCommand());
+       getCommand("health").setExecutor(new HealthCommand());
        getCommand("hunger").setExecutor(new HungerCommand());
        getCommand("kill").setExecutor(new KillCommand());
        getCommand("night").setExecutor(new NightCommand());
