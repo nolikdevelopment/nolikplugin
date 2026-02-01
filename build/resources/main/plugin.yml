@@ -26,7 +26,18 @@ commands:
       - hl
       - h
     usage: /health <1 - 20>
-
-
+  inventory:
+    description: Открывает склад вашего игрока.
+    aliases:
+      - inventory
+      - inv
+    usage: /inventory
+  food:
+    description: Выдает голод вашему игроку.
+    aliases:
+      - food
+      - fh
+      - f
+    usage: /food <nickname> <food>
 
 
