@@ -12,6 +12,13 @@ commands:
       - c
       - cl
     usage: /calculate <num1> <+|-|/|*> <num2>
+  message:
+    description: Отправляет тестовое сообщение.
+    aliases:
+      - w
+      - message
+      - sw
+    usage: /m <hello|good>
 
 
 
