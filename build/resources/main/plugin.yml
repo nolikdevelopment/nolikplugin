@@ -19,6 +19,13 @@ commands:
       - message
       - sw
     usage: /m <hello|good>
+  health:
+    description: Выдает очки здоровья вашему игроку.
+    aliases:
+      - heal
+      - hl
+      - h
+    usage: /health <1 - 20>
 
 
 
