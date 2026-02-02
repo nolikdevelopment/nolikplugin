@@ -9,6 +9,9 @@ import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 
 public class InventoryCommand implements CommandExecutor {
+    public InventoryCommand() {
+        super();
+    }
     // TODO: idk what to do?
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {

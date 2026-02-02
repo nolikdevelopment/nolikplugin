@@ -5,10 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dev.nolikplugin.Commands.*;
-import org.dev.nolikplugin.Events.EventOpenChat;
-import org.dev.nolikplugin.Events.EventPlayerJoin;
-import org.dev.nolikplugin.Events.EventPlayerKick;
-import org.dev.nolikplugin.Events.EventPlayerLeave;
+import org.dev.nolikplugin.Events.*;
 
 public final class CommandManager extends JavaPlugin implements Listener {
 

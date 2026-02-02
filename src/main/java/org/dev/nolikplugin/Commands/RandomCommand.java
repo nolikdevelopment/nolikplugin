@@ -9,7 +9,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 
 public class RandomCommand implements CommandExecutor {
-    // TODO: /random 1 - 100;
 
     Random random = new Random();
 
@@ -18,10 +17,26 @@ public class RandomCommand implements CommandExecutor {
         if ((!(sender instanceof Player))) {
             return false;
         }
-            if (command.getName().toLowerCase().equals("random")) {
-            int a = Integer.parseInt(String.valueOf(random.nextInt(100)));
-            sender.sendMessage("Число: " + a);
+        Player player = (Player) sender;
+        if (args.length < 1) {
+            return false;
         }
-        return true;
+        try {
+            int num = Integer.parseInt(args[0]);
+            int num2 = Integer.parseInt(args[1]);
+            if (num <= 0) {
+                player.sendMessage("Число не может быть отрицательным!");
+                return true;
+            }
+            if (num2 > num || num2 <= 0) {
+                return true;
+            }
+            int nums = random.nextInt(num) + random.nextInt(num2);
+            player.sendMessage("Число: " + nums);
+            return true;
+        } catch (NumberFormatException e) {
+            player.sendMessage("Возникла ошибка!");
+            return true;
+        }
     }
 }
