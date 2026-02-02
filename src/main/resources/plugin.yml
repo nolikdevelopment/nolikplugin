@@ -44,4 +44,5 @@ commands:
     aliases:
       - random
       - r
+      - rd
     usage: /random <num1> <num2>

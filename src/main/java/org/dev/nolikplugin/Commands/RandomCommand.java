@@ -25,7 +25,7 @@ public class RandomCommand implements CommandExecutor {
             int num = Integer.parseInt(args[0]);
             int num2 = Integer.parseInt(args[1]);
             if (num <= 0) {
-                player.sendMessage("Число не может быть отрицательным!");
+                player.sendMessage("Число не может быть отрицательным!!");
                 return true;
             }
             if (num2 > num || num2 <= 0) {
