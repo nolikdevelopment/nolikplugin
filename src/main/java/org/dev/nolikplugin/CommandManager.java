@@ -6,6 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dev.nolikplugin.Commands.*;
 import org.dev.nolikplugin.Events.*;
+import org.dev.nolikplugin.Interface.PluginMessage;
 
 public final class CommandManager extends JavaPlugin implements Listener {
 
@@ -13,7 +14,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         // Commands
-        System.out.println("Плагин запускается...");
+        PluginMessage.enable();
         getCommand("calculator").setExecutor(new CalculatorCommand());
         getCommand("message").setExecutor(new MessageCommand());
         getCommand("message").setTabCompleter(new MessageCompliter());
@@ -31,6 +32,6 @@ public final class CommandManager extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        System.out.println("Плагин выключается...");
+        PluginMessage.disable();
     }
 }
