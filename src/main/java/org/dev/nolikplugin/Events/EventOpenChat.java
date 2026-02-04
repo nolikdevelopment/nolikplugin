@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
+
 public class EventOpenChat implements Listener {
     @EventHandler public void onChatOpen(AsyncChatEvent event) {
         Player player = event.getPlayer();

@@ -14,7 +14,6 @@ public class EventPlayerJoin implements Listener {
 
     @EventHandler public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-
         List<String> list = List.of(
                 "Игрок " + player.getName() + " присоединился на сервер!",
                 "Игрок " + player.getName() + " присоединился к пати",
