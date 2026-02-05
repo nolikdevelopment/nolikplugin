@@ -21,6 +21,7 @@ public final class CommandManager extends JavaPlugin implements Listener {
         getCommand("inventory").setExecutor(new InventoryCommand());
         getCommand("food").setExecutor(new FoodCommand());
         getCommand("random").setExecutor(new RandomCommand());
+        getCommand("hide").setExecutor(new HideCommand());
         // Events
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new EventPlayerJoin(), this);

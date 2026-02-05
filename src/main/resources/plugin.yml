@@ -46,3 +46,9 @@ commands:
       - r
       - rd
     usage: /random <num1> <num2>
+  hide:
+    description: Скрывает вашего игрока из таба.
+    aliases:
+      - hide
+      - hd
+    usage: /hide
